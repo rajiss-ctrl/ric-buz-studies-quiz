@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Quiz</title>
+    <!-- fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<img class="right_arrow" src="images/right.png" alt="right arrow">
+    <nav class="nav_bar">
+        <img class="left_arrow" src="images/left.png" alt="left arrow">
+        <div class="logo">
+            <img src="images/learn.png" alt="learn">
+            <h1>
+                <span>RIC </span><span> BUSINESS STUDIES</span>
+            </h1>
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li> <a href="#">ABOUT</a></li>
+            <li> <a href="#">COURSES</a></li>
+            <li><a href="quiz.html">QUIZ</a></li>
+        </ul>
+    </nav>
+    <!-- start quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+    
+    <!-- info box -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>some rules of this quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question</div>
+            <div class="info">2. Once you select your answer. It can't be undone</div>
+            <div class="info">3. You can't select any option once time goes off</div>
+            <div class="info">4. You can't from the Quiz while you are playing</div>
+            <div class="info">5. You'll get points on the basis of your correct answers</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!-- quiz box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Business studies Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- <span>What does HTML stands for?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>Hyper Text Preproccessor</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Markup Language</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Multiple Language</span>
+                </div>
+                    <div class="option">
+                        <span>Hyper Tool Multi Language</span>
+                    </div> -->
+            </div>
+        </section>
+        <!-- quiz box footer -->
+        <footer>
+            <div class="total_que">
+                <!-- <span><p>2</p>of<p>5</p>Questions</span> -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+    <!-- Result box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- <span>and sorry, you got only <p>3</p> out of <p>5</p></span> -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

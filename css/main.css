@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Robboto", sans-serif;
+}
+header {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+nav {
+  position: fixed;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2),
+    0px 6px 20px 0px rgb(0, 0, 0, 0.19);
+  transition: 0.3s ease-in;
+}
+.active {
+  transition: 0.3s ease-in;
+  display: flex;
+}
+
+.logo {
+  margin-top: 50px;
+  text-align: center;
+  color: #f55555;
+}
+.logo h1 span {
+  text-align: center;
+  display: block;
+  padding: 0 6px;
+  font-size: 13px;
+}
+nav .logo img {
+  width: 60px;
+}
+
+nav ul {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+nav ul li {
+  width: 100%;
+  transition: 0.3s ease-in;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+nav ul li a {
+  width: 100%;
+  text-decoration: none;
+  font-size: 12px;
+  color: #4d4c4c;
+}
+nav ul li a:hover {
+  background: #f15555;
+  transition: 0.3s ease-in;
+  padding: 10px;
+  color: #fff;
+}
+.left_arrow {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  border-radius: 20px 0 0 20px;
+  background: #f5b4b4;
+}
+.right_arrow {
+  position: fixed;
+  z-index: 2;
+  top: 5px;
+  left: 0px;
+  width: 30px;
+  border-radius: 0 20px 20px 0;
+  background: #f5b4b4;
+}
+
+.header_section {
+  position: relative;
+  padding: 15px;
+  width: 100%;
+  background: #f5f5f5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header_section h1 {
+  color: #f3c893;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.remark {
+  margin-bottom: 20px;
+}
+.remark--text h1 span {
+  color: #f08080;
+}
+.remark--text p span {
+  color: #fa4909;
+  text-decoration: underline;
+}
+.remark .remark--text p {
+  margin: 10px 0 20px 0;
+}
+
+.header_section img {
+  width: 100%;
+  margin-top: 15px;
+}
+a.quiz_link {
+  width: 80px;
+  background: #f08080;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+}
+main {
+  margin-top: 40px;
+  text-align: center;
+  padding: 15px;
+}
+main h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+main .course1,
+main .course2,
+main .course3 {
+  margin-top: 20px;
+}
+.main_card h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+main .course1 img,
+main .course2 img,
+main .course3 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+section.preview img {
+  width: 100%;
+}
+footer {
+  color: #fff;
+  background: #272626;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 15px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+/* for popup */
+.popup {
+  padding: 15px;
+  width: 70%;
+  position: fixed;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 0.01px solid #f08080;
+  border-bottom: 7px solid #f08080;
+  overflow: hidden;
+  display: none;
+}
+.popup button {
+  width: 20px;
+  outline: none;
+  background: #fff;
+  color: #ff0000;
+  font-size: 25px;
+  border: none;
+}
+.popup h1 {
+  color: #f08080;
+}
+.popup h1,
+.popup .oluko {
+  font-size: 16px;
+  text-align: center;
+}
+.popup .oluko {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-style: italic;
+}
+.popup p {
+  font-size: 14px;
+  font-style: italic;
+}
+.popup span {
+  margin-top: 5px;
+  color: green;
+  font-style: italic;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    box-shadow: none;
+  }
+  .logo {
+    margin: 0;
+    text-align: start;
+    display: flex;
+  }
+  .logo img {
+    width: 45px !important;
+  }
+  .logo h1 {
+    margin: 7px 0 0 4px;
+    color: #ec4103;
+    font-weight: 600;
+  }
+  .logo h1 span {
+    text-align: start;
+  }
+  nav ul {
+    width: auto;
+    display: flex;
+    margin: 0;
+  }
+  nav ul li:last-child a {
+    background: #eb480d;
+    padding: 8px 10px;
+
+    color: #fff;
+  }
+  nav ul li {
+    margin: 0 15px;
+    width: 60px;
+    height: 10px;
+    transition: 0.3s ease-in;
+  }
+  nav ul li a:hover {
+    background: #f15555;
+    transition: 0.3s ease-in;
+    padding: 6px;
+    color: #e0ffff;
+  }
+  .right_arrow,
+  .left_arrow {
+    display: none;
+  }
+  .header_section {
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    margin: 40px 0 15px 0;
+    color: #4b4545;
+  }
+  .header_section h1 span {
+    font-size: 54px;
+  }
+  .remark {
+    width: 45%;
+  }
+  .remark .remark--text h1 {
+    font-size: 45px;
+  }
+  .header_section .remark .remark--text p {
+    margin-bottom: 35px;
+    font-size: 16px;
+  }
+  .header_section img {
+    width: 35%;
+    margin: 15px 100px 0 0;
+    /* transform: rotate(-8deg); */
+  }
+  .header_section .remark .remark--text a {
+    margin: 30px 0 0 0;
+    padding: 15px 20px;
+    font-size: 20px;
+  }
+  main {
+    margin: 0px 0 80px 0;
+    padding: 0 80px;
+  }
+  p.main_para {
+    padding: 0 28%;
+    margin-bottom: 50px;
+  }
+  main .main_card p {
+    padding: 0 28px;
+  }
+  .main_card {
+    display: flex;
+  }
+  footer .footer_nav {
+    padding: 20px;
+  }
+  footer ul li {
+    font-size: 14px;
+    list-style: none;
+    margin-bottom: 10px;
+  }
+
+  footer .disclaimer {
+    font-size: 14px;
+    padding: 20px;
+  }
+  footer .copyright {
+    margin: 20px -20px 0 30px;
+  }
+  .popup {
+    margin-top: 45px;
+    width: 40%;
+  }
+}
