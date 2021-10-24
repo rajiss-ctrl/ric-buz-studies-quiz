@@ -66,5 +66,49 @@ let questions =[
           "Extra Multi-program Language",
           "Examine Multiple Language"
       ]  
+    },
+      {
+      numb:7,
+      question:"_____are documents that flows in and out of the organisation",
+      answer: "Office correspondence",
+      options:[
+          "Office layout",
+          "Office equipment",
+          "Office correspondence",
+          "Closed office"
+      ]  
+    },
+      {
+      numb:8,
+      question:"One of the function of an office is",
+      answer: "Receiving informations",
+      options:[
+          "Production of intangible goods",
+          "Production of tangible goods",
+          "Loading and offloading",
+          "Receiving informations"
+      ]  
+    },
+        {
+      numb:9,
+      question:"Selling of goods and services outside ones country is?",
+      answer: "International Trade",
+      options:[
+          "Export",
+          "Import",
+          "Entreport",
+          "International Trade"
+      ]  
+    },
+       {
+      numb:10,
+      question:"Selling of goods and services within ones country is?",
+      answer: "Home Trade",
+      options:[
+          "Export",
+          "Home Trade",
+          "Entreport",
+          "Loliport"
+      ]  
     }
 ]
